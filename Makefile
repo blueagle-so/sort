@@ -1,25 +1,25 @@
 all:
 	gcc filestruct.c -o base
-	g++ insertknuth.c -o insertknuth
+	#g++ insertknuth.c -o insertknuth
 	g++ quickknuth.c  -o quickknuth
-	g++ mergeknuth.cpp -o mergeknuth
-	g++ mergeknuth1.cpp -o mergeknuth1
-	g++ shellknuth.cpp -o shellknuth
-	git apply fib
-	g++ shellknuth.cpp -o shellknuthfib
-	git apply unfib
+	#g++ mergeknuth.cpp -o mergeknuth
+	#g++ mergeknuth1.cpp -o mergeknuth1
+	#g++ shellknuth.cpp -o shellknuth
+	#git apply fib
+	#g++ shellknuth.cpp -o shellknuthfib
+	#git apply unfib
 	#compile complite.
 	
 	./base
 	#wait ten seconds.
-	./insertknuth
+	#./insertknuth
 	./quickknuth
-	./mergeknuth
-	./mergeknuth1
+	#./mergeknuth
+	#./mergeknuth1
 	#wait 5 sec.
-	./shellknuth
+	#./shellknuth
 	#wain 4 sec.
-	./shellknuthfib
+	#./shellknuthfib
 
 push:
 	git add .
