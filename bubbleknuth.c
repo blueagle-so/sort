@@ -21,47 +21,32 @@ int main ()
 {
 	FILE *infile;
 	struct person input, arr[40000], key;
-int k=0;
+	int k=0;
         clock_t t;
 
         t = clock();
 
-
-
-	// Open person.dat for reading
 	infile = fopen ("person.dat", "r");
-	if (infile == NULL)
-	{
-		fprintf(stderr, "\nError opening file\n");
-		exit (1);
-	}
-
-	// read file contents till end of file
+	
 	while(fread(&input, sizeof(struct person), 1, infile)) {
-
-  arr[k]=input;
-
-  k++;
-  }
+		arr[k]=input;
+ 	 	k++;
+  	}
 
 
         int n = sizeof(arr)/sizeof(arr[0]); 
-B1:;    int bound = n;
+B1:;    
         
-B2:;    for(int i=0;i<n;i++){
-        for (int j = 0; j < bound-1; j++){         
-B3:;    if (arr[i].id- arr[j].id>0){ 
-        int temp = arr[i].id;
-        arr[i].id = arr[j].id; 
-        arr[j].id = temp;        
-        }
-        }
+B2:;    for(int i=0; i < n; i++){
+        	for (int j = 0; j < n; j++){         
+B3:;    		if (arr[i].id- arr[j].id>0){ 
+        			int temp = arr[i].id;
+        			arr[i].id = arr[j].id; 
+        			arr[j].id = temp;        
+        		}
+        	}
 B4:;
-}
-
-
-
-
+	}
 
 
 
