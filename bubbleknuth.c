@@ -14,12 +14,6 @@
 #include <string>
 #include <vector>
 #include <stack>
-//mysqld -u root &
-//mysql  -u root -ppassword -P 33060
-//g++ 1.c -lmysqlcppconn8
-//using namespace std;
-//#include <mysqlx/xdevapi.h>
-//using namespace mysqlx;
 #include <chrono>
 
 
@@ -68,33 +62,19 @@ int k=0;
   }
 
 
-        //int arr[] = {6, 5, 4, 2, 3, 1, 7}; 
         int n = sizeof(arr)/sizeof(arr[0]); 
 B1:;    int bound = n;
         
-B2:;    for(;;){
-        int t=0;
+B2:;    for(int i=0;i<n;i++){
         for (int j = 0; j < bound-1; j++){         
 B3:;    if (arr[j].id- arr[j+1].id>0){ 
         int temp = arr[j].id;
         arr[j].id = arr[j+1].id; 
         arr[j+1].id = temp;        
-        t=j;
-        //printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
-        //printf("j=%i [%i-%i<0] ", j, arr[j], arr[j+1]);
         }
         }
-B4:;    if (t==0) goto B5;
-
-	bound=t+1;
-        //int T[7]={0};
-        //for (int i = 0; i<=n;i++)
-          //      for (int j = 0;j<=i - 1;j++)
-            //            if (arr[j] > arr[i]) T[arr[i]-1]++;
-
+B4:;
 }
-       // for (int k=0;k<n;k++)printf("%d", arr[k]);
-B5:;   
 
 
 
