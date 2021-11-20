@@ -1,4 +1,10 @@
 
+if i<j & ai>aj => inv(ai,aj)      inversion
+
+
+
+
+
 Сортировка пузырьком
 
 время N^2
