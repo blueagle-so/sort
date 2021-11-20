@@ -1,36 +1,14 @@
-// C program for reading
-// struct from a file
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-// struct person with 3 fields
-
-
 #include <stdio.h>
 #include <stdlib.h>
-//#include <mysql.h>
 #include <iostream>
 #include <vector>
 #include <string>
 #include <vector>
 #include <stack>
-//mysqld -u root &
-//mysql  -u root -ppassword -P 33060
-//g++ 1.c -lmysqlcppconn8
-//using namespace std;
-//#include <mysqlx/xdevapi.h>
-//using namespace mysqlx;
 #include <chrono>
-
-
-
-
-
-
-
-
-
-
 
 struct person
 {
@@ -68,7 +46,6 @@ int k=0;
   }
 
 
-        //int arr[] = {6, 5, 4, 2, 3, 1, 7}; 
         int n = sizeof(arr)/sizeof(arr[0]); 
 B1:;    int bound = n;
         
@@ -80,87 +57,14 @@ B3:;    if (arr[j].id- arr[j+1].id>0){
         arr[j].id = arr[j+1].id; 
         arr[j+1].id = temp;        
         t=j;
-        //printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
-        //printf("j=%i [%i-%i<0] ", j, arr[j], arr[j+1]);
         }
         }
 B4:;    if (t==0) goto B5;
 
 	bound=t+1;
-        //int T[7]={0};
-        //for (int i = 0; i<=n;i++)
-          //      for (int j = 0;j<=i - 1;j++)
-            //            if (arr[j] > arr[i]) T[arr[i]-1]++;
 
 }
-       // for (int k=0;k<n;k++)printf("%d", arr[k]);
 B5:;   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// close file
-  //     int n = sizeof(arr) / sizeof(arr[0]);
-/*
-std::stack<std::pair<int,int>> s2,s;
-int l,r,i,j,K;
-Q1:;s.push(std::make_pair(0,n));
-Q1a:;if(!s.empty()){l=s.top().first;r=s.top().second;s.pop();}
-  Q2:;i=l;j=r;K=arr[(j-i)/2+i].id;
-    Q3:;if(arr[i].id-K<0){i++;goto Q3;}
-    Q4:;if(arr[j].id-K>0){j--;goto Q4;}
-    Q5:;
-    Q6:;if(i-j<=0){std::swap(arr[i],arr[j]);i++;j--;}
-    Q6a:;if(i<=j)goto Q3;
-    Q7:;if(r>i){s.push(std::make_pair(i,r));}
-    Q7a:;if(j>l){s.push(std::make_pair(l,j));}
-Q8:;if(!s.empty()) goto Q1a;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

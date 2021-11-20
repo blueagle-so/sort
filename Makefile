@@ -5,7 +5,7 @@ all:
 	#compile complite.
 	
 	./base
-	#wain 10 sec.
+	#wain 6 sec.
 	./bubbleknuth
 	#wait 5 sec.
 	./bubbleknuth1

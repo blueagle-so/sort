@@ -1,30 +1,14 @@
-// C program for reading
-// struct from a file
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-// struct person with 3 fields
-
-
 #include <stdio.h>
 #include <stdlib.h>
-//#include <mysql.h>
 #include <iostream>
 #include <vector>
 #include <string>
 #include <vector>
 #include <stack>
 #include <chrono>
-
-
-
-
-
-
-
-
-
-
 
 struct person
 {
@@ -33,7 +17,6 @@ struct person
 	char lname[20];
 };
 
-// Driver program
 int main ()
 {
 	FILE *infile;
