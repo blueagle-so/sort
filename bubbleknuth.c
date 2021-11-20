@@ -67,76 +67,14 @@ B1:;    int bound = n;
         
 B2:;    for(int i=0;i<n;i++){
         for (int j = 0; j < bound-1; j++){         
-B3:;    if (arr[j].id- arr[j+1].id>0){ 
-        int temp = arr[j].id;
-        arr[j].id = arr[j+1].id; 
-        arr[j+1].id = temp;        
+B3:;    if (arr[i].id- arr[j].id>0){ 
+        int temp = arr[i].id;
+        arr[i].id = arr[j].id; 
+        arr[j].id = temp;        
         }
         }
 B4:;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// close file
-  //     int n = sizeof(arr) / sizeof(arr[0]);
-/*
-std::stack<std::pair<int,int>> s2,s;
-int l,r,i,j,K;
-Q1:;s.push(std::make_pair(0,n));
-Q1a:;if(!s.empty()){l=s.top().first;r=s.top().second;s.pop();}
-  Q2:;i=l;j=r;K=arr[(j-i)/2+i].id;
-    Q3:;if(arr[i].id-K<0){i++;goto Q3;}
-    Q4:;if(arr[j].id-K>0){j--;goto Q4;}
-    Q5:;
-    Q6:;if(i-j<=0){std::swap(arr[i],arr[j]);i++;j--;}
-    Q6a:;if(i<=j)goto Q3;
-    Q7:;if(r>i){s.push(std::make_pair(i,r));}
-    Q7a:;if(j>l){s.push(std::make_pair(l,j));}
-Q8:;if(!s.empty()) goto Q1a;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
