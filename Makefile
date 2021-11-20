@@ -1,5 +1,6 @@
 all:
 	gcc filestruct.c -o base
+	g++ bubbleknuth.c -o bubbleknuth
 	#g++ insertknuth.c -o insertknuth
 	g++ quickknuth.c  -o quickknuth
 	#g++ mergeknuth.cpp -o mergeknuth
@@ -13,6 +14,7 @@ all:
 	./base
 	#wait ten seconds.
 	#./insertknuth
+	./bubbleknuth
 	./quickknuth
 	#./mergeknuth
 	#./mergeknuth1
