@@ -1,6 +1,25 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
+void inv(int arr[], int n){
+
+ int T[7]={0};
+       for (int i = n-1; i>=0;i--)
+                for (int j = i-1;j>=0;j--)
+                        if (arr[j] > arr[i]) T[arr[i]-1]++;
+
+        printf("inversion table: ");
+        for (int i=0; i < n; i++) 
+                        printf("%d ", T[i]); 
+        printf("\n"); 
+
+
+}
+
+
+
+
+
 int main() 
 { 
 	int arr[] = {6, 5, 4, 2, 3, 1, 7}; 
@@ -10,6 +29,7 @@ int main()
 	for (int i=0; i < n; i++) 
 		printf("%d ", arr[i]); 
 	printf("\n"); 
+	inv(arr,n);
 
 B1:;	int bound = n;
    	
@@ -29,22 +49,9 @@ B3:;	if (arr[j]- arr[j+1]>0){
 	printf("\n"); 
    	}
    	}
-B4:;   	if (t==0) {
-	for (int i=0; i < n; i++) 
-		printf("%d ", arr[i]); 
-	printf("\n"); 
-	for (int k=0;k<n;k++)if (arr[k]==4)printf("found 4");return 0;}
+B4:;   	if (t==0) {return 0;}
    	bound=t+1;
-	int T[7]={0};
-	for (int i = 0; i<=n;i++)
-		for (int j = 0;j<=i - 1;j++)
-			if (arr[j] > arr[i]) T[arr[i]-1]++;
-
-	printf("inversion table: ");
-	for (int i=0; i < n; i++) 
-	                printf("%d ", T[i]); 
-        printf("\n"); 
-	
+	inv(arr,n);	
    }
 	for (int k=0;k<n;k++)printf("%d", arr[k]);
 }	
