@@ -1,4 +1,10 @@
 all:
+	gcc bubblesort.c -o bubble
+	./bubble
+
+
+
+alll:
 	gcc filestruct.c -o base
 	g++ bubbleknuth.c -o bubbleknuth
 	g++ bubbleknuthmod.c -o bubbleknuthmod
