@@ -16,10 +16,6 @@ void inv(int arr[], int n){
 
 }
 
-
-
-
-
 int main() 
 { 
 	int arr[] = {6, 5, 4, 2, 3, 1, 7}; 
@@ -49,7 +45,7 @@ B3:;	if (arr[j]- arr[j+1]>0){
 	printf("\n"); 
    	}
    	}
-B4:;   	if (t==0) {return 0;}
+B4:;   	if (t==0) {inv(arr, n);return 0;}
    	bound=t+1;
 	inv(arr,n);	
    }
