@@ -1,9 +1,10 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
+#define masscount 7
 void inv(int arr[], int n){
 
- int T[7]={0};
+ int T[masscount]={0};
        for (int i = n-1; i>=0;i--)
                 for (int j = i-1;j>=0;j--)
                         if (arr[j] > arr[i]) T[i]++;
@@ -19,7 +20,7 @@ void inv(int arr[], int n){
 int main() 
 { 
 	int arr[] = {6, 5, 4, 2, 3, 1, 7}; 
-	int n = sizeof(arr)/sizeof(arr[0]); 
+	int n = masscount;//sizeof(arr)/sizeof(arr[0]); 
 	clock_t t1;
 
 	for (int i=0; i < n; i++) 

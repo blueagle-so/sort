@@ -33,9 +33,9 @@ int main ()
  	 	k++;
   	}
 	        int n = sizeof(arr)/sizeof(arr[0]); 
-        for (int i=0; i < n; i++) 
-                printf("%d ", arr[i].id); 
-        printf("\n"); 
+        //for (int i=0; i < n; i++) 
+         //       printf("%d ", arr[i].id); 
+        //printf("\n"); 
         
 
 
@@ -56,9 +56,9 @@ B4:;
 
 
         t = clock() - t;
-	for (int i=0; i < n; i++) 
-                printf("%d ", arr[i].id); 
-        printf("\n"); 
+	//for (int i=0; i < n; i++) 
+        //        printf("%d ", arr[i].id); 
+        //`printf("\n"); 
 
 
 	printf (" time : %ld clicks (%f seconds).\n",t,((double)t)/CLOCKS_PER_SEC);
